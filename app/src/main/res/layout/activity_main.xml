@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/yellow"
+    tools:context="com.cleo.manalili_fquiz.MainActivity">
+
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/iics"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp" />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Username"
+        android:inputType="textPersonName"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/rememberMe"
+        android:onClick="rememberMe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Remember Me"
+        android:background="@color/gold"
+        android:layout_marginTop="14dp"
+        android:layout_below="@+id/password"
+        android:layout_alignRight="@+id/password"
+        android:layout_alignEnd="@+id/password" />
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:background="@color/gold"
+        android:onClick="loginUser"
+        tools:layout_editor_absoluteX="209dp"
+        tools:layout_editor_absoluteY="403dp"
+        android:layout_alignBaseline="@+id/rememberMe"
+        android:layout_alignBottom="@+id/rememberMe"
+        android:layout_alignLeft="@+id/password"
+        android:layout_alignStart="@+id/password" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        tools:layout_editor_absoluteX="84dp"
+        tools:layout_editor_absoluteY="311dp"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/username"
+        android:layout_alignLeft="@+id/username"
+        android:layout_alignStart="@+id/username" />
+
+</RelativeLayout>
